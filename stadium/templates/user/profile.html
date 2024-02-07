@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<head>
+        <!-- meta tag -->
+        <meta charset="utf-8">
+        <title>Stadium Ticket Booking Management System</title>
+        <meta name="description" content="">
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.html">
+        <link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
+        <!-- bootstrap v4 css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/bootstrap.min.css' %}">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/font-awesome.min.css' %}">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/animate.css' %}">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/owl.carousel.css' %}">
+		<!-- slick css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/slick.css' %}">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/magnific-popup.css' %}">
+		<!-- Offcanvas CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/off-canvas.css' %}">
+		<!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/flaticon.css' %}">
+		<!-- flaticon2 css  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/fonts2/flaticon.css' %}">
+        <!-- rsmenu CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/rsmenu-main.css' %}">
+        <!-- rsmenu transitions CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/rsmenu-transitions.css' %}">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/style.css' %}">
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/responsive.css' %}">
+        
+    </head>
+    <body class="home1">
+        <!--Preloader area start here-->
+        <div class="book_preload">
+            <div class="book">
+                <div class="book__page"></div>
+                <div class="book__page"></div>
+                <div class="book__page"></div>
+            </div>
+        </div>
+		<!--Preloader area end here-->
+		
+        <!--Full width header Start-->
+		<div class="full-width-header">
+
+			<!-- Toolbar Start -->
+			<div class="rs-toolbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="rs-toolbar-left">
+								<div class="welcome-message">
+									<i class="fa fa-bank"></i><span>Stadium Ticket Booking</span> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="rs-toolbar-right">
+								<marquee behavior="" direction=""><h5 style="color: white; letter-spacing: 20px;">
+									YOUR FAVOURITE TICKET BOOKING SYSTEM
+								</h5></marquee>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Toolbar End -->
+			
+			<!--Header Start-->
+			<header id="rs-header" class="rs-header">
+			
+				<!-- Header Top Start -->
+				<div class="rs-header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+						        <div class="header-contact">
+						            <div id="info-details" class="widget-text">
+                                        <i class="glyph-icon flaticon-email"></i>
+						                <div class="info-text">
+						                    <a href="mailto:info@domain.com">
+						                    	<span>Mail Us</span>
+												stadiumticket@gmail.com
+											</a>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="logo-area text-center">
+									<a href="index.html"><img style="width: 50%;" src="{% static 'assets/images/logo.png'%}" alt="logo"></a>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+						        <div class="header-contact pull-right">
+						            <div id="phone-details" class="widget-text">
+						                <i class="glyph-icon flaticon-phone-call"></i>
+						                <div class="info-text">
+						                    <a href="tel:4155551234">
+						                    	<span>Call Us</span>
+												+232-76-777-220/+232-77-800-700
+											</a>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<!-- Header Top End -->
+
+				<!-- Menu Start -->
+				<div class="menu-area menu-sticky">
+					<div class="container">
+						<div class="main-menu">
+							<div class="row relative">
+								<div class="col-sm-12">
+									<!-- <div id="logo-sticky" class="text-center">
+										<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+									</div> -->
+									<a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+									<nav class="rs-menu" style="margin-left: 250px;">
+										<ul class="nav-menu">
+											<!-- Home -->
+											<li class="menu-item-has-children"><a href="{% url 'index' %}" class="home">YOU ARE HIGHLY WELCOME -- {{user.username}}</a>
+												
+											</li>
+											<!-- End Home --> 
+                                            
+                                           
+
+
+                                            
+																					<!--Events Menu End-->
+                                            
+											<li style="margin-left: 300px;" class=""> <a href="{% url 'logout' %}">LOGOUT</a></li>
+											<li  class=""> <a href="{% url 'stadium' %}">BACK TO HOME</a></li>
+
+                                            
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Menu End -->
+			</header>
+			<!--Header End-->
+
+		</div>
+        <!--Full width header End-->
+		
+		
+		
+		
+		<!-- About Us Start -->
+        <div id="rs-about" class="rs-about sec-spacer" style="margin-top: 0px;">
+            <div class="container">
+                <div class="sec-title mb-50 text-center">
+                    <h2>YOUR PROFILE</h2>      
+                	<p> At the heart of our mission is a commitment to transforming ticket management accross the nation</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-img rs-animation-hover">
+							<img src="{% static 'assets/images/slider/home1/slide4.jpg' %}" alt="img02"/>
+							<a class="popup-youtube rs-animation-fade" href="https://www.youtube.com/watch?v=DzQ7ONEi8cg" title="Video Icon">
+							</a>
+							<div class="overly-border"></div>
+						</div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                    	<div class="about-desc">
+                		    <h3> OUR TICKET MANAGEMENT SYSTEM</h3>      
+                			<p>USERNAME</p><span>{{user.username}}</span>
+                			<p>EMAIL</p><span>{{user.email}}</span>
+                			<p>ADDRESS</p><span>{{user.address}}</span>
+                			<p>CONTACT</p><span>{{user.phone}}</span>
+                    	</div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Us End -->
+
+       
+        
+		
+
+
+		
+		
+        
+       
+        <!-- Footer Start -->
+        <footer id="rs-footer" class="bg3 rs-footer">
+			<div class="container">
+				<!-- Footer Address -->
+				<div>
+					<div class="row footer-contact-desc">
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Address</h4>
+								<p class="contact-desc">
+									1 silicon Hills<br>
+									Mile 91-Freetown Highway
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-phone"></i>
+								<h4 class="contact-title">Phone Number</h4>
+								<p class="contact-desc">
+									+232-79-333-667<br>
+									+232-88-147-879
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Email Address</h4>
+								<p class="contact-desc">
+									stadiumticket@gmail.com<br>
+									www.stadiumticket.com
+								</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			
+			<!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row" style="margin-bottom: 30px;">
+                    </div>                               
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom" style="background-color: black;">
+                <div class="container">
+                    <div class="copyright">
+                        <p>© 2023 <a href="#">Stadium Ticket Management System</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp">
+            <i class="fa fa-angle-up"></i>
+        </div>
+		
+		
+       
+        
+        <!-- modernizr js -->
+        <script src="{% static 'assets/js1/modernizr-2.8.3.min.js' %}"></script>
+        <!-- jquery latest version -->
+        <script src="{% static 'assets/js1/jquery.min.js' %}"></script>
+        <!-- bootstrap js -->
+        <script src="{% static 'assets/js1/bootstrap.min.js' %}"></script>
+        <!-- owl.carousel js -->
+        <script src="{% static 'assets/js1/owl.carousel.min.js' %}"></script>
+		<!-- slick.min js -->
+        <script src="{% static 'assets/js1/slick.min.js' %}"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="{% static 'assets/js1/isotope.pkgd.min.js' %}"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="{% static 'assets/js1/imagesloaded.pkgd.min.js' %}"></script>
+        <!-- wow js -->
+        <script src="{% static 'assets/js1/wow.min.js' %}"></script>
+        <!-- counter top js -->
+        <script src="{% static 'assets/js1/waypoints.min.js' %}"></script>
+        <script src="{% static 'assets/js1/jquery.counterup.min.js' %}"></script>
+        <!-- magnific popup -->
+        <script src="{% static 'assets/js1/jquery.magnific-popup.min.js' %}"></script>
+        <!-- rsmenu js -->
+        <script src="{% static 'assets/js1/rsmenu-main.js' %}"></script>
+        <!-- plugins js -->
+        <script src="{% static 'assets/js1/plugins.js' %}"></script>
+		 <!-- main js -->
+        <script src="{% static 'assets/js1/main.js' %}"></script>
+    </body>
+
+
+</html>

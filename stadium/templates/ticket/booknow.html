@@ -1,0 +1,595 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<head>
+	<!-- meta tag -->
+	<meta charset="utf-8">
+	<title>Stadium Ticket Booking Management System</title>
+	<meta name="description" content="">
+	<!-- responsive tag -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" href="apple-touch-icon.html">
+	<link rel="icon" href="{% static 'assets/images/circle.png' %}" type="image/png" />
+	<!-- bootstrap v4 css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/bootstrap.min.css' %}">
+	<!-- font-awesome css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/font-awesome.min.css' %}">
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/animate.css' %}">
+	<!-- owl.carousel css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/owl.carousel.css' %}">
+	<!-- slick css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/slick.css' %}">
+	<!-- magnific popup css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/magnific-popup.css' %}">
+	<!-- Offcanvas CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/off-canvas.css' %}">
+	<!-- flaticon css  -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/flaticon.css' %}">
+	<!-- flaticon2 css  -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/fonts2/flaticon.css' %}">
+	<!-- rsmenu CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/rsmenu-main.css' %}">
+	<!-- rsmenu transitions CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/rsmenu-transitions.css' %}">
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/style.css' %}">
+	<!-- responsive css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css1/responsive.css' %}">
+
+	<!-- FONT AWESOME CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	
+</head>
+    <body class="home1">
+        <!--Preloader area start here-->
+        <div class="book_preload">
+            <div class="book">
+                <div class="book__page"></div>
+                <div class="book__page"></div>
+                <div class="book__page"></div>
+            </div>
+        </div>
+		<!--Preloader area end here-->
+		
+        <!--Full width header Start-->
+		<div class="full-width-header">
+
+			<!-- Toolbar Start -->
+			<div class="rs-toolbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="rs-toolbar-left">
+								<div class="welcome-message">
+									<i class="fa fa-bank"></i><span>Stadium Ticket Booking</span> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="rs-toolbar-right">
+								<marquee behavior="" direction=""><h5 style="color: white; letter-spacing: 20px;">
+									YOUR FAVOURITE TICKET BOOKING SYSTEM
+								</h5></marquee>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Toolbar End -->
+			
+			<!--Header Start-->
+			<header id="rs-header" class="rs-header">
+				
+				<!-- Header Top Start -->
+				<div class="rs-header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+						        <div class="header-contact">
+						            <div id="info-details" class="widget-text">
+                                        <i class="glyph-icon flaticon-email"></i>
+						                <div class="info-text">
+						                    <a href="mailto:info@domain.com">
+						                    	<span>Mail Us</span>
+												stadiumticket@gmail.com
+											</a>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="logo-area text-center">
+									<a href="index.html"><img style="width: 50%;" src="{% static 'assets/images/logo.png' %}" alt="logo"></a>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+						        <div class="header-contact pull-right">
+						            <div id="phone-details" class="widget-text">
+						                <i class="glyph-icon flaticon-phone-call"></i>
+						                <div class="info-text">
+						                    <a href="tel:4155551234">
+						                    	<span>Call Us</span>
+												+232-76-777-220/+232-77-800-700
+											</a>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<!-- Header Top End -->
+
+				<!-- Menu Start -->
+				<div class="menu-area menu-sticky">
+					<div class="container">
+						<div class="main-menu">
+							<div class="row relative">
+								<div class="col-sm-12">
+									<!-- <div id="logo-sticky" class="text-center">
+										<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+									</div> -->
+									<a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+									<nav class="rs-menu" style="margin-left: 400px;">
+										<ul class="nav-menu">
+											
+											<!--Courses Menu Start-->
+		                                    <li class=""> <a href="{% url 'soccer' %}">Home</a></li>
+		                                    <!--Courses Menu End-->
+                                            
+                                            
+											<!--Courses Menu Start-->
+		                                    <li class=""> <a href="{% url 'fixtures_page' %}">Fixtures</a></li>
+		                                    <!--Courses Menu End-->
+                                            
+											<!--Events Menu Start-->
+											<li class=" menu-item-has-children"><a href="#">Events</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="{% url 'soccer' %}">Football</a></li>
+                                                    <li><a href="{% url 'athletics' %}">Athletics</a></li>
+                                                </ul>
+                                            </li>
+											<!--Courses Menu Start-->
+											
+		                                    <li class=""> <a href="{% url 'viewbooking'%}">View Bookings</a></li>
+											
+		                                    <!--Courses Menu End-->										<!--Events Menu End-->
+                                            
+											<li style="margin-left: 100px;" class=""> <a href="#">YOU ARE HIGHLY WELCOME -- {{user.username }}</a></li>
+
+											<li style="margin-left: 0px;" class=""> <a href="{% url 'login' %}">LOGOUT</a></li>                                           
+										</ul>
+									</nav>
+                                    
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Menu End -->
+			</header>
+			<!--Header End-->
+
+		</div>
+        <!--Full width header End-->
+		
+	
+		
+		
+
+        <!-- Events Start -->
+        <div id="rs-events" class="rs-events sec-spacer">
+			<div class="container">
+				<div class="sec-title mb-50 text-center">
+                    <h2>TERMS OF REFERENCE</h2>      
+                	<p>Knowing the terms of reference can help you make a wiser decision in buying your ticket</p>
+                </div>
+
+				<div class="card-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6" style="text-align: justify;">
+								<p>The Stadium Ticket Management System facilitates the purchase and management of event tickets, and users are required to read and comply with the following terms of reference. Users must meet event-specific eligibility criteria, adhere to non-negotiable ticket prices, and provide accurate payment information for transactions processed. Refund policies are determined by event organizers, and users are encouraged to review them before purchase. Tickets are delivered electronically, and entry requires a valid, non-duplicated ticket. Resale and transfer policies are subject to event organizer rules. Users are responsible for account security, compliance with laws, and reporting unauthorized access. This system undergoes scheduled maintenance and is not liable for downtime-related losses. Privacy and data security are maintained per the Privacy Policy. Disputes are resolved following applicable laws. Support is available for user inquiries or issues.</p>
+								<p> You are about to book a ticket, note that this action cannot be undo. Therefore you can proceed.</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col-md-12" style="text-align: center;">
+									{% for obj in fixture %}
+									
+										<span><p style="font-size: 20px;">
+											{% if obj.team1_image %}
+										<img src="{{ obj.team1_image.url}}" style="width: 50px; border-radius: 40%;" alt="">
+										{% endif %} 
+											{{obj.team1}} VS {{obj.team2}}
+											{% if obj.team1_image %}
+											<img src="{{ obj.team2_image.url}}" style="width: 50px; border-radius: 40%;" alt="">
+											
+											{% endif %} 
+										</p></span>
+										<p style="margin-top: -30px; font-size: 14px;">{{obj.game_date}}</p>
+										<p style="margin-top: -30px; font-size: 14px;">{{obj.game_time}}</p>
+										<p style="margin-top: -30px; font-size: 14px;">{{obj.venue}}</p>
+										<div class="event-btn">
+										
+											<button style="margin-left: 20px; width: 100px; margin-top: -30px;" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-info" id="button2" onclick="toggleButton()">Book now</button>
+										</div>
+									
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+	
+				
+				  </div>
+
+				 
+				
+			</div>
+        </div>
+        <!-- Events End -->
+        
+
+
+		<script>
+			var button2 = document.getElementById('button2');
+		  
+			// Check the initial state from local storage
+			var button2State = localStorage.getItem('button2State');
+			if (button2State === 'disabled') {
+			  button2.disabled = true;
+			  button2.classList.add('btn-danger'); // Change color to red
+			  button2.innerText = 'Booking Ended for this Fixture'; // Update text
+			}
+		</script>
+		
+			
+		
+
+
+		
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg modal-dialog-centered modal-dialog-scrollable animate__animated animate__fadeIn">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-home"></i>&nbsp;&nbsp;Book a Ticket</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="card">
+                <h4 class="text-center">Book a Ticket</h4>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                      
+                        <div class="container">
+							<div class="row">
+								{% for seat_type in front_seat %}
+								<div class="col-md-4">
+									<h3>{{ seat_type.get_seat_type_display }}</h3>
+									<p>Available Quantity: {{ seat_type.available_quantity }}</p>
+									<p>Seat Price: Nle{{ seat_type.seat_price }}</p>
+									<p>Remaining Quantity {{ seat_type.remaining_quantity }}</p>
+									<!-- Add other attributes as needed -->
+								</div>
+								{% endfor %}
+							</div>
+							<div class="row">
+							  <div class="col-md-6">
+								{{ form.username.label }}
+								{{ form.username }}
+							  </div>
+  
+							  <div class="col-md-6">
+								{{ form.address.label }}
+								{{ form.address }}
+							  </div>
+							</div>
+  
+  
+						  
+							<div class="row">
+							  <div class="col-md-6">
+								{{ form.contact.label }}
+								{{ form.contact }}
+							  </div>
+  
+							  <div class="col-md-6">
+								{{ form.event.label }}
+								{{ form.event }}
+							  </div>
+							</div>
+  
+  
+							<div class="row">
+							  <div class="col-md-6">
+								{{ form.seat_type.label }}
+								{{ form.seat_type }}
+							  </div>
+  
+							  <div class="col-md-6">
+								{{ form.number_of_tickets.label }}
+								{{ form.number_of_tickets }}
+							  </div>
+							</div>
+
+
+							<div class="row">
+								<div class="col-md-12">
+								  {{ form.teamfixture.label }}
+								  {{ form.teamfixture }}
+								</div>
+							  </div>
+  
+						  </div>
+                        
+                        <button type="submit" class="btn btn-secondary mt-5" style="margin-left: 150px; width: 60%;"><i class="fas fa-database"></i>
+                          Add Booking Ticket</button>
+                      </form>
+                      </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+		
+        <!-- Partner Start -->
+        <div id="rs-partner" class="rs-partner pt-70 pb-70">
+            <div class="container">
+				<div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="80" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false" data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
+                    <div class="partner-item">
+                        <a href="#"><img src="{% static 'assets/images/testimonial/5.jpg' %}" alt="Partner Image"></a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#"><img src="{% static 'assets/images/testimonial/4.jpg' %}" alt="Partner Image"></a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#"><img src="{% static 'assets/images/testimonial/3.jpg' %}" alt="Partner Image"></a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#"><img src="{% static 'assets/images/testimonial/2.jpg' %}" alt="Partner Image"></a>
+                    </div>
+                    <div class="partner-item">
+                        <a href="#"><img src="{% static 'assets/images/testimonial/1.jpg' %}" alt="Partner Image"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Partner End -->
+       
+        <!-- Footer Start -->
+        <footer id="rs-footer" class="bg3 rs-footer">
+			<div class="container">
+				<!-- Footer Address -->
+				<div>
+					<div class="row footer-contact-desc">
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Address</h4>
+								<p class="contact-desc">
+									1 silicon Hills<br>
+									Mile 91-Freetown Highway
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-phone"></i>
+								<h4 class="contact-title">Phone Number</h4>
+								<p class="contact-desc">
+									+232-79-333-667<br>
+									+232-88-147-879
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Email Address</h4>
+								<p class="contact-desc">
+									stadiumticket@gmail.com<br>
+									www.stadiumticket.com
+								</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			
+			<!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row" style="margin-bottom: 30px;">
+                    </div>                               
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom" style="background-color: black;">
+                <div class="container">
+                    <div class="copyright">
+                        <p>© 2018 <a href="#">RS Theme</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp">
+            <i class="fa fa-angle-up"></i>
+        </div>
+		
+		<!-- Canvas Menu start -->
+        <nav class="right_menu_togle">
+        	<div class="close-btn"><span id="nav-close" class="text-center">x</span></div>
+            <div class="canvas-logo">
+                <a href="index.html"><img src="images/logo-white.png" alt="logo"></a>
+            </div>
+        	<ul class="sidebarnav_menu list-unstyled main-menu">
+                <!--Home Menu Start-->
+                <li class="current-menu-item menu-item-has-children"><a href="index.html">Home</a></li>
+                <!--Home Menu End-->
+                
+                <!--About Menu Start-->
+                <li class="menu-item-has-children"><a href="about.html">About Us</a></li>
+                <!--About Menu End-->
+                
+               
+                
+                <!--Courses Menu Star-->
+                <li class="menu-item-has-children"><a href="#">Courses</a>
+                    <ul class="list-unstyled">
+                        <li class="sub-nav"><a href="courses.html">Courses<span class="icon"></span></a></li>
+                        <li class="sub-nav"><a href="courses2.html">Courses Two<span class="icon"></span></a></li>
+                        <li class="sub-nav"><a href="courses-details.html">Courses Details<span class="icon"></span></a></li>
+                    </ul>
+                </li>
+                <!--Courses Menu End-->
+                
+                <!--Events Menu Star-->
+                <li class="menu-item-has-children"><a href="#">Events</a>
+                    <ul class="list-unstyled">
+                        <li class="sub-nav"><a href="events.html">Events<span class="icon"></span></a></li>
+                        <li class="sub-nav"><a href="events-details.html">Events Details<span class="icon"></span></a></li>
+                    </ul>
+                </li>
+                <!--Events Menu End-->
+                
+                
+        </nav>
+        <!-- Canvas Menu end -->
+        
+        <!-- Search Modal Start -->
+        <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true" class="fa fa-close"></span>
+	        </button>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="search-block clearfix">
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="eg: Computer Technology" type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search Modal End --> 
+        
+
+		<script>
+			function validateBookingInput(inputField) {
+				var inputValue = inputField.value;
+				var numericRegex = /^[1-9]\d{0,2}$/;
+		
+				if (!numericRegex.test(inputValue) || inputValue < 1 || inputValue > 1000) {
+					// Show a pop-up alert
+					alert("Please enter a valid number of tickets");
+		
+					// Clear the input
+					inputField.value = '';
+		
+					return false; // Prevent further processing if the input is invalid
+				}
+		
+				return true; // Proceed with further processing if the input is valid
+			}
+		</script>
+		
+		
+
+
+
+ <!--
+     ***************************
+        SWEET ALERT MESSAGES
+     **************************
+ -->
+ <!--====sweet Asert messageS-->
+ {% for message in messages %}
+ {% if message.tags == 'success' %}
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+    var m = "{{ message }}";
+    swal("perfect !", m, "success")
+ </script>
+ {% endif %}
+ {% endfor %}
+
+
+
+
+
+ {% for message in messages %}
+ {% if message.tags == 'error' %}
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+    var m = "{{ message|escapejs|safe }}";
+    swal("Warning !", m, "error")
+ </script>
+ {% endif %}
+ {% endfor %}
+
+
+
+
+
+
+
+
+         <!-- modernizr js -->
+		 <script src="{% static 'assets/js1/modernizr-2.8.3.min.js' %}"></script>
+		 <!-- jquery latest version -->
+		 <script src="{% static 'assets/js1/jquery.min.js' %}"></script>
+		 <!-- bootstrap js -->
+		 <script src="{% static 'assets/js1/bootstrap.min.js' %}"></script>
+		 <!-- owl.carousel js -->
+		 <script src="{% static 'assets/js1/owl.carousel.min.js' %}"></script>
+		 <!-- slick.min js -->
+		 <script src="{% static 'assets/js1/slick.min.js' %}"></script>
+		 <!-- isotope.pkgd.min js -->
+		 <script src="{% static 'assets/js1/isotope.pkgd.min.js' %}"></script>
+		 <!-- imagesloaded.pkgd.min js -->
+		 <script src="{% static 'assets/js1/imagesloaded.pkgd.min.js' %}"></script>
+		 <!-- wow js -->
+		 <script src="{% static 'assets/js1/wow.min.js' %}"></script>
+		 <!-- counter top js -->
+		 <script src="{% static 'assets/js1/waypoints.min.js' %}"></script>
+		 <script src="{% static 'assets/js1/jquery.counterup.min.js' %}"></script>
+		 <!-- magnific popup -->
+		 <script src="{% static 'assets/js1/jquery.magnific-popup.min.js' %}"></script>
+		 <!-- rsmenu js -->
+		 <script src="{% static 'assets/js1/rsmenu-main.js' %}"></script>
+		 <!-- plugins js -->
+		 <script src="{% static 'assets/js1/plugins.js' %}"></script>
+		  <!-- main js -->
+		 <script src="{% static 'assets/js1/main.js' %}"></script>
+    </body>
+
+
+</html>

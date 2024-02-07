@@ -1,0 +1,545 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<head>
+        <!-- meta tag -->
+        <meta charset="utf-8">
+        <title>Stadium Ticket Booking Management System</title>
+        <meta name="description" content="">
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.html">
+        <link rel="icon" href="{% static 'assets/images/circle.png' %}" type="image/png" />
+        <!-- bootstrap v4 css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/bootstrap.min.css' %}">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/font-awesome.min.css' %}">
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/animate.css' %}">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/owl.carousel.css' %}">
+		<!-- slick css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/slick.css' %}">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/magnific-popup.css' %}">
+		<!-- Offcanvas CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/off-canvas.css' %}">
+		<!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/flaticon.css' %}">
+		<!-- flaticon2 css  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/fonts/fonts2/flaticon.css' %}">
+        <!-- rsmenu CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/rsmenu-main.css' %}">
+        <!-- rsmenu transitions CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/rsmenu-transitions.css' %}">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/style.css' %}">
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css1/responsive.css' %}">
+        
+    </head>
+    <body class="home1">
+        <!--Preloader area start here-->
+        <div class="book_preload">
+            <div class="book">
+                <div class="book__page"></div>
+                <div class="book__page"></div>
+                <div class="book__page"></div>
+            </div>
+        </div>
+		<!--Preloader area end here-->
+		
+        <!--Full width header Start-->
+		<div class="full-width-header">
+
+			<!-- Toolbar Start -->
+			<div class="rs-toolbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="rs-toolbar-left">
+								<div class="welcome-message">
+									<i class="fa fa-bank"></i><span>Stadium Ticket Booking</span> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="rs-toolbar-right">
+								<marquee behavior="" direction=""><h5 style="color: white; letter-spacing: 20px;">
+									YOUR FAVOURITE TICKET BOOKING SYSTEM
+								</h5></marquee>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- Toolbar End -->
+			
+			<!--Header Start-->
+			<header id="rs-header" class="rs-header">
+				<!-- Header Top Start -->
+				<div class="rs-header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+						        <div class="header-contact">
+						            <div id="info-details" class="widget-text">
+                                        <i class="glyph-icon flaticon-email"></i>
+						                <div class="info-text">
+						                    <a href="mailto:info@domain.com">
+						                    	<span>Mail Us</span>
+												stadiumticket@gmail.com
+											</a>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="logo-area text-center">
+									<a href="index.html"><img style="width: 50%;" src="{% static 'assets/images/logo.png'%}" alt="logo"></a>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+						        <div class="header-contact pull-right">
+						            <div id="phone-details" class="widget-text">
+						                <i class="glyph-icon flaticon-phone-call"></i>
+						                <div class="info-text">
+						                    <a href="tel:4155551234">
+						                    	<span>Call Us</span>
+												+232-76-777-220/+232-77-800-700
+											</a>
+						                </div>
+						            </div>
+						        </div>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<!-- Header Top End -->
+
+				<!-- Menu Start -->
+				<div class="menu-area menu-sticky">
+					<div class="container">
+						<div class="main-menu">
+							<div class="row relative">
+								<div class="col-sm-12">
+									<!-- <div id="logo-sticky" class="text-center">
+										<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+									</div> -->
+									<a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
+									<nav class="rs-menu" style="margin-left: 600px;">
+										<ul class="nav-menu" style="margin-left: -500px;">
+											<!-- Home -->
+											<li class="current-menu-item current_page_item menu-item-has-children"> 
+												<h2 style="color: white;">
+													Experience the Best in Purchasing Your Ticket
+												</h2>
+											</li>
+											<!-- End Home --> 
+                                           
+										</ul>
+									</nav>
+                                    <div class="right-bar-icon rs-offcanvas-link text-right">
+										
+										<a href="{% url 'login' %}" class="nav-expander fixed">login <span>										<a  class="nav-expander fixed"><i class="fa fa-user fa-lg white"></i>
+										</span></a>
+
+
+										<a href="{% url 'register' %}"  class="nav-expander fixed">Register<span>									<a  class="nav-expander fixed"><i class="fa fa-user-plus fa-lg white"></i> 
+										</span></a>
+										
+										
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Menu End -->
+			</header>
+			<!--Header End-->
+		</div>
+        <!--Full width header End-->
+
+		<!-- Slider Area Start -->
+        <div id="rs-slider" class="slider-overlay-2">     
+        	<div id="home-slider" class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="0" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="false" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false">
+				<!-- Item 1 -->
+				<div class="item active">
+					<img src="{% static 'assets/images/slider/home1/slide1.jpg' %}" alt="Slide1" style="margin-top: -250px;" />
+					<div class="slide-content">
+						<div class="display-table">
+							<div class="display-table-cell">
+								<div class="container text-center">
+									<h1 class="slider-title" data-animation-in="fadeInLeft" data-animation-out="animate-out">STADIUM TICKET BOOKING SYSTEM</h1>
+									<p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Welcome to our Stadium Ticket Management System, your ultimate solution for seamless ticket booking and event management. Our innovative platform is designed to revolutionize the way you experience live events at<br class="hidden-sm-dow">come and experience the best in stadium activities.</p>  
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</div>         
+        </div>
+        <!-- Slider Area End -->
+        	</div>         
+        </div>
+        <!-- Slider Area End -->
+		
+		
+
+
+<div class="container">
+		<div class="row">
+			<div class="sec-title mb-50 text-center">
+				<h2 style="margin-top: 40px;">OUR UPCOMING FIXTURES</h2>      
+				<p>I great game comes with great responsibility and courage</p>
+			</div>
+			{% for obj in fixture %}
+				<div class="col-md-4">
+				<span>
+					<div class="event-item">
+					<div class="event-im mb-3">
+						{% if obj.team1_image %}
+						<img src="{{ obj.team1_image.url}}" style="width: 90px; border-radius: 30%; margin-left:70px;" alt="">
+						{% endif %} 
+						<span>
+							{% if obj.team1_image %}
+						<img src="{{ obj.team2_image.url}}" style="width: 80px; border-radius: 30%;" alt="">
+						{% endif %} 
+						</span>
+						<a class="image-link" href="events-details.html" title="University Tour 2018">
+							
+						</a>
+					</div>
+
+					
+					<div class="events-details sec-colo" style="margin-left: -30px;">
+						<div class="event-date" style="margin-left: 130px;">
+							<i class="fa fa-calendar"></i>
+							<span>{{obj.game_date}}</span>
+						</div>
+						<h4 style="margin-left: 130px;" class="event-title"><a href="events-details.html">{{obj.team1}}</a></h4> <span style="margin-left: 160px;">VS</span><h4 style="margin-left: 120px;" class="event-title"><a href="events-details.html">{{obj.team2}}</a></h4>
+						<div style="margin-left: 100px;" class="event-meta">
+							<div class="event-time" style="margin-left: -30px;">
+								<i class="fa fa-clock-o"></i>
+								<span>{{obj.game_time}}</span>
+							</div>
+							<div  class="event-location">
+								<i class="fa fa-map-marker"></i>
+								<span>{{obj.venue}}</span>
+							</div>
+						</div>
+						<div class="event-btn">
+							<a style="margin-left: 100px;" href="{% url 'login' %}" class="btn btn-info" id="button2" >Book Your Ticket now</a>
+						</div>
+					</div>
+				</div>
+				</span>
+					
+				</div>
+			{% endfor %} 
+		   
+				<div class="row">
+					<div class="col-md-4">
+						
+					</div>
+				</div>
+
+		</div>
+</div>
+
+ <!-- Partner Start -->
+ <div id="rs-partner" class="rs-partner pt-70 pb-70">
+	<div class="container">
+		<div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="80" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false" data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
+			<div class="partner-item">
+				<a href="#"><img src="{% static 'assets/images/testimonial/5.jpg' %}" alt="Partner Image"></a>
+			</div>
+			<div class="partner-item">
+				<a href="#"><img src="{% static 'assets/images/testimonial/4.jpg' %}" alt="Partner Image"></a>
+			</div>
+			<div class="partner-item">
+				<a href="#"><img src="{% static 'assets/images/testimonial/3.jpg' %}" alt="Partner Image"></a>
+			</div>
+			<div class="partner-item">
+				<a href="#"><img src="{% static 'assets/images/testimonial/2.jpg' %}" alt="Partner Image"></a>
+			</div>
+			<div class="partner-item">
+				<a href="#"><img src="{% static 'assets/images/testimonial/1.jpg' %}" alt="Partner Image"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Partner End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- About Us Start -->
+        <div id="rs-about" class="rs-about sec-spacer" style="margin-top: -20px;">
+            <div class="container">
+                <div class="sec-title mb-50 text-center">
+                    <h2>ABOUT US</h2>      
+                	<p> At the heart of our mission is a commitment to transforming ticket management accross the nation</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-img rs-animation-hover">
+							<img src="{% static 'assets/images/slider/home1/slide4.jpg' %}" alt="img02"/>
+							<a class="popup-youtube rs-animation-fade" href="https://www.youtube.com/watch?v=DzQ7ONEi8cg" title="Video Icon">
+							</a>
+							<div class="overly-border"></div>
+						</div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                    	<div class="about-desc">
+                		    <h3> OUR TICKET MANAGEMENT SYSTEM</h3>      
+                			<p>We understand the frustration of long lines, the anxiety of counterfeit tickets, and the hassle of navigating complex ticketing systems. That's why we've poured our passion and expertise into creating a ticket management solution that redefines the status quo.</p>
+                    	</div>
+						<div id="accordion" class="rs-accordion-style1">
+						    <div class="card">
+						        <div class="card-header" id="headingOne">
+						            <h3 class="acdn-title" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          		Our History
+						            </h3>
+						        </div>
+						        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+						            <div class="card-body">
+						                We are dedicated to ensuring the highest level of security for your transactions and guaranteeing the legitimacy of your tickets. With our mobile ticket delivery system, you can enter the stadium with the simple swipe of your smartphone, eliminating the need for paper tickets.
+						            </div>
+						        </div>
+						    </div>
+						    <div class="card">
+						        <div class="card-header" id="headingTwo">
+						            <h3 class="acdn-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          		Our Mission
+						            </h3>
+						        </div>
+						        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+						            <div class="card-body">
+						                We invite you to join us on this journey to redefine ticket management and event access. Whether you're a passionate sports enthusiast, a devoted music lover, or a family looking to create lasting memories, is here to make it happen.
+
+
+						            </div>
+						        </div>
+						    </div>
+						    <div class="card">
+						        <div class="card-header mb-0" id="headingThree">
+						            <h3 class="acdn-title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          		Our Vision
+						            </h3>
+						        </div>
+						        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+						            <div class="card-body">
+						                We are dedicated to ensuring the highest level of security for your transactions and guaranteeing the legitimacy of your tickets. With our mobile ticket delivery system, you can enter the stadium with the simple swipe of your smartphone, eliminating the need for paper tickets.
+						            </div>
+						        </div>
+						    </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Us End -->
+	 <!-- Modal -->
+	 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable animate__animated animate__fadeIn">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-home"></i>&nbsp;&nbsp;Book a Ticket</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="card">
+					<h4 class="text-center">Book a Ticket</h4>
+					<div class="card-body">
+						<div class="mb-3">
+							<div class="container">
+								<div class="row">
+									{% for seat_type in front_seat %}
+									<div class="col-md-4">
+										<h3>{{ seat_type.get_seat_type_display }}</h3>
+										<p>Available Quantity: {{ seat_type.available_quantity }}</p>
+										<p>Seat Price: Nle{{ seat_type.seat_price }}</p>
+										<p>Remaining Quantity {{ seat_type.remaining_quantity }}</p>
+										<!-- Add other attributes as needed -->
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+						  <form method="post" enctype="multipart/form-data">
+							{% csrf_token %}
+						  
+							<div class="container">
+								<div class="row">
+								  <div class="col-md-6">
+									{{ form.username.label }}
+									{{ form.username }}
+								  </div>
+	  
+								  <div class="col-md-6">
+									{{ form.address.label }}
+									{{ form.address }}
+								  </div>
+								</div>
+	  
+	  
+							  
+								<div class="row">
+								  <div class="col-md-6">
+									{{ form.contact.label }}
+									{{ form.contact }}
+								  </div>
+	  
+								  <div class="col-md-6">
+									{{ form.event.label }}
+									{{ form.event }}
+								  </div>
+								</div>
+	  
+	  
+								<div class="row">
+								  <div class="col-md-6">
+									{{ form.seat_type.label }}
+									{{ form.seat_type }}
+								  </div>
+	  
+								  <div class="col-md-6">
+									{{ form.number_of_tickets.label }}
+									{{ form.number_of_tickets }}
+								  </div>
+								</div>
+	
+	
+								<div class="row">
+									<div class="col-md-12">
+									  {{ form.teamfixture.label }}
+									  {{ form.teamfixture }}
+									</div>
+								  </div>
+	  
+							  </div>
+							
+							<button type="submit" class="btn btn-secondary mt-5" style="margin-left: 150px; width: 60%;"><i class="fas fa-database"></i>
+							  Add Booking</button>
+						  </form>
+						  </div>
+					</div>
+				  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+        <!-- Footer Start -->
+        <footer id="rs-footer" class="bg3 rs-footer">
+			<div class="container">
+				<!-- Footer Address -->
+				<div>
+					<div class="row footer-contact-desc">
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Address</h4>
+								<p class="contact-desc">
+									1 silicon Hills<br>
+									Mile 91-Freetown Highway
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-phone"></i>
+								<h4 class="contact-title">Phone Number</h4>
+								<p class="contact-desc">
+									+232-79-333-667<br>
+									+232-88-147-879
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-inner">
+								<i class="fa fa-map-marker"></i>
+								<h4 class="contact-title">Email Address</h4>
+								<p class="contact-desc">
+									stadiumticket@gmail.com<br>
+									www.stadiumticket.com
+								</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			
+			<!-- Footer Top -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row" style="margin-bottom: 30px;">
+                    </div>                               
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom" style="background-color: black;">
+                <div class="container">
+                    <div class="copyright">
+                        <p>© 2023 <a href="#">Stadium Ticket Management System</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- start scrollUp  -->
+        <div id="scrollUp">
+            <i class="fa fa-angle-up"></i>
+        </div>
+		
+		
+       
+        
+        <!-- modernizr js -->
+        <script src="{% static 'assets/js1/modernizr-2.8.3.min.js' %}"></script>
+        <!-- jquery latest version -->
+        <script src="{% static 'assets/js1/jquery.min.js' %}"></script>
+        <!-- bootstrap js -->
+        <script src="{% static 'assets/js1/bootstrap.min.js' %}"></script>
+        <!-- owl.carousel js -->
+        <script src="{% static 'assets/js1/owl.carousel.min.js' %}"></script>
+		<!-- slick.min js -->
+        <script src="{% static 'assets/js1/slick.min.js' %}"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="{% static 'assets/js1/isotope.pkgd.min.js' %}"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="{% static 'assets/js1/imagesloaded.pkgd.min.js' %}"></script>
+        <!-- wow js -->
+        <script src="{% static 'assets/js1/wow.min.js' %}"></script>
+        <!-- counter top js -->
+        <script src="{% static 'assets/js1/waypoints.min.js' %}"></script>
+        <script src="{% static 'assets/js1/jquery.counterup.min.js' %}"></script>
+        <!-- magnific popup -->
+        <script src="{% static 'assets/js1/jquery.magnific-popup.min.js' %}"></script>
+        <!-- rsmenu js -->
+        <script src="{% static 'assets/js1/rsmenu-main.js' %}"></script>
+        <!-- plugins js -->
+        <script src="{% static 'assets/js1/plugins.js' %}"></script>
+		 <!-- main js -->
+        <script src="{% static 'assets/js1/main.js' %}"></script>
+    </body>
+</html>
